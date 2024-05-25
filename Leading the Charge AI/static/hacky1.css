@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%) , url(slide2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    padding-left: 20px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.content{
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: inset -3px 3px 3px blue;
+    margin-left: 330px;
+}
+
+.user-input{
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    justify-content: space-between;
+}
+
+.content h2{
+    width: 600px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+    margin-top: -5px;
+    padding-top: 50x;
+}
+
+form input{
+    background: transparent;
+    border-bottom: 1px solid blue;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: arial;
+}
+
+.btnn{
+    width: 250px;
+    height: 40px;
+    background: blue;
+    border: none;
+    margin-top: 10px;
+    margin-left: 190px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.btnn:hover{
+    background: white;
+    color: black;
+}
+
+form label{
+    font-size: 15px;
+}
+
+.link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: -20px;
+    text-align: center;
+}

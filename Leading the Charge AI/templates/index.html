@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='hacky1.css') }}"> -->
+    <link rel="stylesheet" href="../static/hacky1.css">
+    <title>Page1</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Leading the Charge</h2>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Check Human Development Level For Your Country</h2>
+            <form action="{{url_for('predict')}}" method="post">
+                    <div class="user-input">
+                        <div id="first" style="width: 50%; float: left; padding-right: 20px;">
+                            <div class="box">
+                                <label for="Gender Inequality Index"> Gender Inequality Index</label>
+                                <input type="text" name="gii" placeholder="Gender Inequality Index" required>    
+                            </div>
+                            <div class="box">
+                                <label for="rank"> Rank</label>
+                                <input type="text" name="rank" placeholder="Rank" required>    
+                            </div>
+                            <div class="box">
+                                <label for="Maternal">Maternal Mortality Ratio</label>
+                                <input type="text" name="mmr" placeholder="Maternal mortality ratio" required>    
+                            </div>
+                            <div class="box">
+                                <label for="Adolescent Birth Rate"> Adolescent Birth Rate</label>
+                                <input type="text" name="abr" placeholder="Adolescent birth rate" required>    
+                            </div>
+                             <div class="box">
+                                <label for="Share Of Seats">Share of Seats in Parliament</label>
+                                <input type="text" name="parliament_seats" placeholder="Share of seats in parliament" required>     
+                            </div> 
+                        </div>
+                        <div id="second" style="width: 50%; float: left; padding-left: 20px;">
+                            <div class="box">
+                                <label for="Female">Female Secondary Education</label>
+                                <input type="text" name="f_secondary_educ" placeholder="Female secondary education" required>    
+                            </div>
+                            <div class="box">
+                                <label for="Male">Male Secondary Education</label>
+                                <input type="text" name="m_secondary_educ" placeholder="Male secondary education" required>    
+                            </div>
+                            <div class="box">
+                                <label for="Malee">Male Labour Force</label>
+                                <input type="text" name="m_labour_force" placeholder="Male labour force" required>    
+                            </div>
+                            <div class="box">
+                                <label for="Female">Female Labour Force</label>
+                                <input type="text" name="f_labour_force" placeholder="Female labour force" required>    
+                            </div>
+                        </div> 
+                    </div>
+                    <button type="submit" class="btnn">Check</button>
+            </form>
+
+            <br>
+            <br>
+            <div class='link'> {{ prediction_text }}</div>
+        </div>
+    </div>
+</body>
+</html>
